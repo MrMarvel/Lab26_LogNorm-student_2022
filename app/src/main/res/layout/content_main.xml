@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <EditText
         android:id="@+id/mean_val"
         android:layout_width="wrap_content"
@@ -13,7 +12,7 @@
         android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Мат. ожидание"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned|numberDecimal"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

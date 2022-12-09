@@ -18,7 +18,7 @@ class AnyViewModel: ViewModel() {
         val m: Float = if (mean.value != null) mean.value!! else .0f
         val v: Float = if (variance.value != null) variance.value!! else .0f
         if (v >= 0) {
-            val normVal = Random().nextGaussian() * sqrt(v) + m
+            val normVal = exp(sqrt(v) * Random().nextGaussian() + m)
 
             result.value = normVal.toFloat()
             return

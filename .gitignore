@@ -1,4 +1,6 @@
 /.idea
+gradle-wrapper.jar
+*.zip
 
 *.iml
 .gradle
